@@ -65,6 +65,5 @@ console.log(ar);
 console.log(bubbleSort([1, 2, 5, 6, 2, 3, 8]));
 
 module.exports = {
-  bubbleSort,
-  swap
+  bubbleSort
 };
