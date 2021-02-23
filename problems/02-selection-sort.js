@@ -10,7 +10,7 @@ function swap(arr, index1, index2) {
 function selectionSort(list) {
   let n = list.length;
 
-  for (let i = 1; i < n - 1; i++) {
+  for (let i = 0; i < n - 1; i++) {
     let min = i
     for (let j = i + 1; j < n; j++) {
       if (list[j] < list[min]) {
@@ -18,7 +18,7 @@ function selectionSort(list) {
       }
     }
     if (min !== i) {
-      swap(list, list[min], list[i]);
+      swap(list, min, i);
     }
   }
   return list;
