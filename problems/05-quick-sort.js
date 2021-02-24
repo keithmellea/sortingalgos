@@ -1,7 +1,22 @@
 // Implement Quick Sort
 
 function quickSort(array) {
-  // your code here
+  if (array.length === 0 || array.length === 1) {
+    return array;
+  }
+  let pivot = array[0];
+  array.splice(0, 1);
+  let hi = [];
+  let lo = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < pivot) {
+      lo.push(array[i]);
+    }
+    else if (array[i] >= pivot) {
+      hi.push(array[i]);
+    }
+  }
+  let hiSorted =
 }
 
 

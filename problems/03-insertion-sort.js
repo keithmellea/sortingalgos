@@ -1,39 +1,6 @@
 // Implement Insertion Sort
 debugger
 function insertionSort(list) {
-  // debugger
-  // let sorted = 1;
-  // let n = list.length;
-  // let focus = undefined;
-  // debugger
-  // let bool = false;
-  // while (sorted < n) {
-  //   bool = false;
-  //   for (let i = 1; i < n; i++) {
-  //     if (focus === undefined) {
-  //       focus = i;
-  //       debugger
-  //     }
-
-  //     if (list[focus] < list[i]) {
-  //       focus = i;
-  //       debugger
-  //     }
-  //   }
-  //   for (var j = 0; j < sorted; j++) {
-
-  //     if (list[focus] > list[j]) {
-  //       debugger
-  //       list.splice(j + 1, 0, list[focus]);
-  //       list.splice(focus, 1);
-  //       bool = true;
-  //       debugger
-  //     }
-  //   }
-
-  //   sorted++;
-  // }
-  // return list;
 
 
 
