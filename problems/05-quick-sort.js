@@ -16,7 +16,10 @@ function quickSort(array) {
       hi.push(array[i]);
     }
   }
-  let hiSorted =
+  let hiSorted = quickSort(hi);
+  let loSorted = quickSort(lo);
+
+  return loSorted.concat([pivot]).concat(hiSorted);
 }
 
 

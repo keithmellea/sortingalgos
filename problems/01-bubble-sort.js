@@ -1,35 +1,61 @@
 // Implement Bubble Sort
 
+
+
 function swap(array, idx1, idx2) {
-  debugger
-  let temp = array[idx1];
-  debugger
-  array[idx1] = array[idx2];
-  debugger
-  array[idx2] = temp;
-  debugger
-}
-
-function bubbleSort(array) {
-  let swapped = true;
-  debugger
-  while (swapped) {
-    debugger
-    swapped = false;
-    debugger
-    for (let i = 0; i < array.length - 1; i++) {
-
-      if (array[i] > array[i + 1]) {
-        debugger
-        swap(array, i, i + 1);
-        swapped = true;
-        debugger
-      }
-    }
-  }
-  debugger
+  [array[idx1], array[idx2]] = [array[idx2], array[idx1]];
   return array;
 }
+function bubbleSort(array) {
+  swapped = false
+  let sorted = 0;
+  for (let i = 0; i < array.length - 1 && sorted < array.length; i++) {
+    if (array[i] > array[i + 1]) {
+      swap(array, i, i + 1)
+      swapped = true;
+    }
+    if (i === ((array.length - 2) - sorted) && swapped === true && sorted < array.length) {
+      i = 0
+      sorted++;
+    } else if (sorted === array.length && swapped === false) {
+      return array;
+    }
+  }
+  return array;
+}
+
+
+
+// function swap(array, idx1, idx2) {
+//   debugger
+//   let temp = array[idx1];
+//   debugger
+//   array[idx1] = array[idx2];
+//   debugger
+//   array[idx2] = temp;
+//   debugger
+// }
+
+// function bubbleSort(array) {
+//   let swapped = true;
+//   debugger
+//   while (swapped) {
+//     debugger
+//     swapped = false;
+//     debugger
+//     for (let i = 0; i < array.length - 1; i++) {
+
+//       if (array[i] > array[i + 1]) {
+//         debugger
+//         swap(array, i, i + 1);
+//         swapped = true;
+//         debugger
+//       }
+//     }
+//   }
+//   debugger
+//   return array;
+// }
 
 // function bubbleSort(array) {
 //   let n = array.length - 1;
